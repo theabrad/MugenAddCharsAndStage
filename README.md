@@ -1,1 +1,3 @@
 This is a little script I wrote in Python to be able to add characters and stages in the 2D fighting game M.U.G.E.N with the click of a mouse.
+To add characters place the character folder in the "chars" directory. To add stages place the stage files in the "stages" directory.
+Once the new characters and stages are placed in their respective folders, place this script in the main MUGEN directory.(The one with the .exe file in it) and click.

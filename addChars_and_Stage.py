@@ -19,7 +19,7 @@ print charList
 
 #get the list of stages
 os.chdir(stageDir)							#change the directory to the stage directory
-stageName = glob.glob('*.def')
+stageName = glob.glob('*.def')				#search for only the .def files
 print stageName
 
 
