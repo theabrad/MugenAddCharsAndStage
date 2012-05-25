@@ -1,0 +1,1 @@
+This is a little script I wrote in Python to be able to add characters and stages in the 2D fighting game M.U.G.E.N with the click of a mouse.
