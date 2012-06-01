@@ -8,9 +8,7 @@ charDir = directory + '\\chars'					#Folder for characters
 stageDir = directory + '\\stages'				#Folder for stages
 selectDir = directory + '\\data'				#Folder for select.def
 
-print charDir
-print stageDir
-print selectDir
+
 
 #get the list of characters
 charList =  [f for f in os.listdir(charDir)
@@ -27,10 +25,11 @@ print stageName
 #change to select def directory
 os.chdir(selectDir)
 spaces = '->\n'
+breakLine = ';---------------------------------------------------------------------\n\n\n'
 
 #write the list of characters to a text file
 file = open(select, "w")
-file.write(';---------------------------------------------------------------------\n')
+file.write(breakLine)
 file.write('[Characters]\n')
 file.write('randomselect\n')
 for item in charList:
@@ -40,13 +39,13 @@ for item in charList:
 		file.write("%s\n" %item)
 
 #write the list of stages
-file.write('\n\n;---------------------------------------------------------------------\n')
+file.write(breakLine)
 file.write('[ExtraStages]\n')
 for item in stageName:
     file.write("stages/%s\n" %item)
 
 #write the options
-file.write('\n\n;---------------------------------------------------------------------\n')
+file.write(breakLine)
 file.write('[Options]\n')
 file.write('arcade.maxmatches = 6,1,1,0,0,0,0,0,0,0\n')
 file.write('team.maxmatches = 4,1,1,0,0,0,0,0,0,0\n')
