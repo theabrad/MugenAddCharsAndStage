@@ -1,4 +1,7 @@
-import os, glob
+import os
+import glob
+import wx
+
 directory = os.getcwd()							#get the directory
 select = 'select.def'							#select.def file
 
